@@ -5,10 +5,6 @@
 - A service that helps people who live together (roommates)
 - A bunch of little things that make their life just a bit easier
 
-### Ground rules
-
-TODO
-
 ### Components
 
 - [API]()
