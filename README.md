@@ -7,27 +7,27 @@
 
 ### Components
 
-- [API]()
+- [API](https://github.com/louistsaitszho/Loft-API)
 - Clients
-  - [Android]()
-  - [iOS]()
+  - [Android](https://github.com/louistsaitszho/Loft-Android)
+  - [iOS](https://github.com/louistsaitszho/Loft-iOS)
 
 ### How it helps users
 
 - Make it easier for people to keep track of what the apartment needs
-	- Shared todo list
+  - Shared todo list
 - Make it easier for people to keep in touch
-	- Chatroom
+  - Chatroom
 - Make it easier for new joiners to catch up
-	- Share notes
-	- Share gallery
-	- Share folder
-	- Share schedule
+  - Share notes
+    - Share gallery
+    - Share folder
+    - Share schedule
 
 ## What is this repository?
 
 - Share components of several repos
-	- Client designs/mockups
+  - Client designs/mockups
 - Higher level documents
-	- Goal
-	- Decisions
+  - Goal
+    - Decisions
