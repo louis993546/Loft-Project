@@ -37,3 +37,96 @@ Authentication
 - After you have been approved, the new user receives token (Push notification maybe? Still TBC esp. the security part) that last forever
 - Every request needs to use that token
 - It should be revoke-able, but that's not urgent at this moment
+
+
+
+
+# Random thought note
+
+## Pages
+
+### Chat
+
+- Sender
+- Message
+- Created at
+
+### Notes
+
+- Title
+  - Plain text
+- Description
+  - Store as CommonMark
+  - Some extra logic is needed to help CommonMark to get the photos
+- Meta
+  - Created At (for sorting)
+  - (future) tags
+  - (future) colors
+
+### Tasks
+
+- Task
+  - Plain text
+- State
+  - Boolean for now
+- Who
+  - member/member id
+
+### Calendar
+
+- Basically just a series of `Period`(i.e. `ISO_OFFSET_DATE_TIME` to `ISO_OFFSET_DATE_TIME`)
+- Title
+- Description
+- (maybe?) participants
+
+### Members
+
+- Name
+- Phone (optional) -> GDPR
+- Email (optional) -> GDPR
+
+### Settings
+
+- (future) change theme OTF
+- (future) change locale OTF
+- Notifications
+  - messages
+  - task reminders
+  - calendar reminders
+- Cloud Backup
+- Export/Restore
+  - Transfer to another device right now
+    - (Cloud is the easiest way)
+    - Or it can be transfer locally between deviced directly (somehow)
+      - Explain what is going to be transfer, and what's not
+        - Basically just very basic sign in info, since all data is already in our cloud
+  - Export for future restore
+    - Explain what will be export, what will not
+- Delete account
+  - Explain what will happen to the data
+    - TL;DR: all deleted
+  - Explain what will the other users will (not) see
+    - Message from you: gone
+    - Your info: gone
+    - Tasks/Calendar events/Notes that you created: still there (because we don't know which one is from you, which one is not. So if you want to delete notes, DIY)
+
+
+### Abouts
+
+- Rate the app
+- Check out source code
+- Report issue
+- Request feature
+
+### Onboarding
+
+- 3rd option: move from old phone to new phone
+- 4th option: restore from record
+
+## Business
+
+- Freemium
+- Native ads
+- Each person choose if they want to see ads or not
+- Something like $1-3 per year
+- At some point I will definitely need to run some math to see how bad it scales
