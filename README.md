@@ -28,7 +28,22 @@
 
 ## Architecture
 
+### TL;DR
+
+- GraphQL API
+  - Authentication middleware
+- PostgreSQL RDBMS
+- Hosted on Heroku (for now)
+- Native Android & iOS apps
+  - Fetch data from GraphQL API into local storage
+
+### Graph
+
 TODO: draw it out on figma or something
+
+### Graph explained
+
+TODO: be more specific on which part takes care of which 
 
 ## UX
 
@@ -62,7 +77,7 @@ TODO: In progress
 
 ## Roadmap
 
-- [Milestone](https://github.com/louistsaitszho/Loft-Project/milestones) contains the general roadmap of the whole project
+- [Milestone](https://github.com/louistsaitszho/Loft-Project/milestones?direction=asc&sort=due_date&state=open) contains the general roadmap of the whole project
 - [API progress](https://github.com/louistsaitszho/Loft-API/projects/1)
 - [Android progress](https://github.com/louistsaitszho/Loft-Android/projects/2)
 - [iOS progress](https://github.com/louistsaitszho/Loft-iOS/projects/1)
