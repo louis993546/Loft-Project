@@ -1,64 +1,68 @@
 # Project Loft
 
-## What is this?
+## Index
 
-- A service that helps people who live together (roommates)
-- A bunch of little things that make their life just a bit easier
+- [Goal](#goal)
+- [Objective](#objective)
+- [Architecture](#architecture)
+- [UX](#ux)
+- [Why Project Loft](#why-project-loft)
+- [Privacy](#privacy)
+- [Security](#security)
+- [Roadmap](#roadmap)
+- [Idea dump](throughtNote.md)
 
-### Components
+## Goal
 
-- [API](https://github.com/louistsaitszho/Loft-API)
-- Clients
-  - [Android](https://github.com/louistsaitszho/Loft-Android)
-  - [iOS](https://github.com/louistsaitszho/Loft-iOS)
+- Reduce the overhead in communicating with roommates
+- Automate/Streamline/Coordinate common tasks
 
-### How it helps users
+## Objective
 
-- Make it easier for people to keep track of what the apartment needs
-  - Shared todo list
-- Make it easier for people to keep in touch
-  - Chatroom
-- Make it easier for new joiners to catch up
-  - Share notes
-    - Share gallery
-    - Share folder
-    - Share schedule
-  - Who is living here right now
-  - Share schedule
-    - Cleaning
-    - Who want to take over the share space on which day
-    - etc
+- Native apps on Android and iOS
+- Share chatroom for each share flat
+- Share task/shopping list
+- Share notes
+- Share roommates informations
+- Share calendar
 
-## What is this repository?
+## Architecture
 
-- Share components of several repos
-  - Client designs/mockups
-- Higher level documents
-  - Goal
-    - Decisions
+TODO: draw it out on figma or something
 
-### Data & storage
+## UX
 
-- Industry standard structure
-    - Relational Database (Postgres probably)
-    - REST API (written in either golang or kotlin)
-    - Android & iOS client
-- Unique designs that fit the product needs
-    - No username/password user flow
-        - "We will never sell data & there is no meaningful data to sell. We don't even know who you are"
+- Material-based design on Android
+- Human Interface Guideline-based design on iOS
+- TL;DR: Don't reinvent the wheel (expecially when you are not a wheel designer/engineer)
 
-### Designs
+## Why Project Loft
 
-- 90% platform specific + 5% loft branding + 5% user customization
-    - It's personal: I want to learn more about UX in each platform
-    - Loft is not something that's really necessary, the last thing I want is to have weird design that drive users away
-        - "If it ain't broke don't fix it"
-    - 5% branding mostly on colors and font
-    - 5% customization allows user to have slightly higher personal connection with the product?
+- It's the 1-stop-shop for all your dealing-with-roommate needs
+- It cares about your privacy
 
-### Target users
+## Privacy
 
-1. People who live in shared apartment
-2. 18-35 (probably)
-3. 1 + 2 => probably without major disassability
-4. it's an app =>  
+### Techical perspective
+
+- It is design to don't ask for your email, phone number, real name, access to social media, anything
+- It is built with GDPR compliance in mind
+- All the source code is available right here on GitHub, you can proof (or disproof) if there is any melicious code
+
+### Operation perspective
+
+- (Almost) everything is free for anyone to check out, except
+  - Keys, secrets, and other private resource to deploy to server, Play Store, and App Store
+- We respect your rules to be forgotten
+- (TODO: more GDPR stuff)
+
+## Security
+
+TODO: In progress
+
+## Roadmap
+
+- [Milestone](https://github.com/louistsaitszho/Loft-Project/milestones) contains the general roadmap of the whole project
+- [API progress](https://github.com/louistsaitszho/Loft-API/projects/1)
+- [Android progress](https://github.com/louistsaitszho/Loft-Android/projects/2)
+- [iOS progress](https://github.com/louistsaitszho/Loft-iOS/projects/1)
